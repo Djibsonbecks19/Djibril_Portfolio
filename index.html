@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Djibril Traoré</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="space-canvas"></canvas>
+<div class="nebula nebula-1"></div>
+<div class="nebula nebula-2"></div>
+<div class="nebula nebula-3"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">DJB<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-layout">
+
+    <div class="hero-inner">
+      <div class="hero-tag">Cybersecurity &amp; Full-Stack Development - Dakar, Senegal</div>
+      <h1 class="hero-name">
+        Djibril<br>
+        <span class="line2">Traoré.</span>
+      </h1>
+      <p class="hero-desc">
+        Cybersecurity student and full-stack developer. I secure systems, build web applications, and bridge the gap between infrastructure and code. Cisco CCNA certified, trained on Fortinet and Palo Alto firewalls.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary"><i class="fa-solid fa-arrow-down"></i> View Projects</a>
+        <a href="#contact" class="btn-ghost"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="me.jpg" alt="Djibril Traoré" />
+    </div>
+
+  </div>
+  <div class="scroll-indicator"><div class="scroll-line"></div>Scroll</div>
+</section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a cybersecurity and software development student based in <strong>Dakar, Senegal</strong>, with hands-on experience in system hardening, network administration, and infrastructure security.</p>
+      <p>I'm equally at home configuring enterprise firewalls as I am building full-stack web applications. I believe in <strong>security-first development</strong> - building things that are not just functional, but robust and resilient by design.</p>
+      <p>Fluent in English and French, with intermediate Spanish. Currently open to <strong>internships, junior roles, and freelance projects</strong> in cybersecurity or full-stack development.</p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card">
+        <div class="stat-num">CCNA</div>
+        <div class="stat-label">Cisco Certified</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Agile</div>
+        <div class="stat-label">Methodology</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Languages spoken</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="skill-cat-name">Cybersecurity</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Penetration Testing</span>
+        <span class="skill-tag">OWASP Top 10</span>
+        <span class="skill-tag">System Hardening</span>
+        <span class="skill-tag">Cryptography</span>
+        <span class="skill-tag">Defensive Security</span>
+        <span class="skill-tag">Wireshark</span>
+        <span class="skill-tag">Nmap</span>
+      </div>
+      <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Cisco CCNA Certified</div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+      <div class="skill-cat-name">Networks &amp; Firewalls</div>
+      <div class="skill-tags">
+        <span class="skill-tag">TCP/IP</span>
+        <span class="skill-tag">VLAN</span>
+        <span class="skill-tag">VPN</span>
+        <span class="skill-tag">NAT</span>
+        <span class="skill-tag">Fortinet</span>
+        <span class="skill-tag">Palo Alto</span>
+        <span class="skill-tag">Active Directory</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
+      <div class="skill-cat-name">Frontend</div>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">WordPress</span>
+        <span class="skill-tag">React Native</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+      <div class="skill-cat-name">Backend &amp; Databases</div>
+      <div class="skill-tags">
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Firebase</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+      <div class="skill-cat-name">Systems &amp; Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Linux (Ubuntu, Debian)</span>
+        <span class="skill-tag">Windows Server</span>
+        <span class="skill-tag">C / C++</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">SQL / NoSQL</span>
+        <span class="skill-tag">R</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+      <div class="skill-cat-name">Methods &amp; Practices</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Agile / Scrum</span>
+        <span class="skill-tag">OOP / UML</span>
+        <span class="skill-tag">ISO Standards</span>
+        <span class="skill-tag">GDPR</span>
+        <span class="skill-tag">Algorithm Design</span>
+        <span class="skill-tag">Technical Docs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-list">
+    <div class="project-item reveal project-with-images">
+      <div class="project-num">01</div>
+
+      <div class="project-info">
+        <div class="project-name">IIBS School - Mobile Management App</div>
+        <div class="project-desc">
+          Full mobile application for school management, published on the App Store.
+          Handles students, grades, scheduling, and administrative workflows with secured forms and database integrity.
+        </div>
+
+        <div class="project-gallery">
+          <img src="app_previews/1.jpeg" alt="App screen 1">
+          <img src="app_previews/2.jpeg" alt="App screen 2">
+          <img src="app_previews/3.jpeg" alt="App screen 3">
+          <img src="app_previews/4.jpeg" alt="App screen 4">
+          <img src="app_previews/5.jpeg" alt="App screen 5">
+          <img src="app_previews/6.jpeg" alt="App screen 6">
+          <img src="app_previews/7.jpeg" alt="App screen 7">
+          <img src="app_previews/8.jpeg" alt="App screen 8">
+          <img src="app_previews/9.jpeg" alt="App screen 9">
+          <img src="app_previews/10.jpeg" alt="App screen 10">
+          <img src="app_previews/11.jpeg" alt="App screen 11">
+          <img src="app_previews/12.jpeg" alt="App screen 12">
+          <img src="app_previews/13.jpeg" alt="App screen 13">
+        </div>
+
+      </div>
+
+      <div class="project-meta">
+        <div class="project-tech">
+          <span class="tech-badge">React Native</span>
+          <span class="tech-badge">Firebase</span>
+        </div>
+        <i class="fa-solid fa-arrow-right project-arrow"></i>
+      </div>
+    </div>
+    <div class="project-item reveal">
+      <div class="project-num">02</div>
+      <div class="project-info">
+        <div class="project-name">E-Commerce Platform</div>
+        <div class="project-desc">Full e-commerce website with user authentication, shopping cart, product management, and simulated payment flow. Built security-first - SQL injection prevention, form validation, access control.</div>
+      </div>
+      <div class="project-meta">
+        <div class="project-tech">
+          <span class="tech-badge">PHP</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Bootstrap</span>
+        </div>
+        <i class="fa-solid fa-arrow-right project-arrow"></i>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-num">04</div>
+      <div class="project-info">
+        <div class="project-name">Firewall Lab - Fortinet &amp; Palo Alto</div>
+        <div class="project-desc">Virtual deployment and configuration of enterprise firewalls. Implemented VLAN segmentation, VPN tunnels, routing rules, and simulated DoS and MITM attack scenarios for penetration testing.</div>
+      </div>
+      <div class="project-meta">
+        <div class="project-tech">
+          <span class="tech-badge">Fortinet</span>
+          <span class="tech-badge">Palo Alto</span>
+          <span class="tech-badge">VLAN / VPN</span>
+        </div>
+        <i class="fa-solid fa-arrow-right project-arrow"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Experience</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="experience-list">
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Cybersecurity &amp; Systems Technician</div>
+          <div class="exp-company">Institut Informatique Business School - Dakar</div>
+        </div>
+        <div class="exp-period">2023 — Present</div>
+      </div>
+      <ul class="exp-duties">
+        <li>Administration and hardening of Linux (Ubuntu, Debian) and Windows Server systems.</li>
+        <li>Firewall configuration (Fortinet, Palo Alto), VLAN segmentation, and routing setup.</li>
+        <li>Vulnerability detection and analysis, internal penetration testing using Wireshark and Nmap.</li>
+        <li>Implementation of security policies aligned with ISO standards and GDPR compliance.</li>
+      </ul>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Junior Full-Stack Web Developer</div>
+          <div class="exp-company">Institut Informatique Business School - Dakar</div>
+        </div>
+        <div class="exp-period">2023 — Present</div>
+      </div>
+      <ul class="exp-duties">
+        <li>Developed and published a mobile school management application (IIBS School) on the App Store.</li>
+        <li>Managed SQL and NoSQL databases; implemented secured form handling and role-based access control.</li>
+        <li>Built dynamic websites using HTML, CSS, JavaScript, PHP, and WordPress.</li>
+        <li>Worked in Agile (Scrum) methodology and produced full technical documentation.</li>
+      </ul>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Network &amp; IT Support Assistant</div>
+          <div class="exp-company">Institut Informatique Business School — Dakar</div>
+        </div>
+        <div class="exp-period">2023 - Present</div>
+      </div>
+      <ul class="exp-duties">
+        <li>Installation and troubleshooting of Windows and Linux workstations.</li>
+        <li>User and access management via Active Directory.</li>
+        <li>Network monitoring with Wireshark and Nmap; detection of DoS and MITM attacks.</li>
+        <li>Virtual deployment and configuration testing of Fortinet and Palo Alto firewalls.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <h3 class="contact-headline reveal">Let's work<br><span>together.</span></h3>
+    <p class="contact-sub reveal">Open to internships, junior roles, and freelance projects in cybersecurity and full-stack development. Based in Dakar - available remotely worldwide.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:Traodjibril.250@gmail.com" class="contact-link"><i class="fa-regular fa-envelope"></i> Email</a>
+      <a href="https://github.com/Djibsonbecks19" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/djibril-mouhamadtraor%C3%A9793a982a0/" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="tel:+221774142741" class="contact-link"><i class="fa-solid fa-phone"></i> +221 77 414 27 41</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">&copy; 2025 Djibril Mouhamad Amidou Traoré - Dakar, Senegal</div>
+  <div class="footer-social">
+    <a href="https://github.com/Djibsonbecks19" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/djibril-mouhamadtraor%C3%A9793a982a0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:traodjibril.250@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+</div>
+</body>
+</html>
